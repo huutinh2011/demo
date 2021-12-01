@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:400,200italic);
+
+
 .App {
   text-align: center;
 }
@@ -28,11 +31,576 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*Logins */
+
+.inputemail {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 5px solid #ccc;
+  box-sizing: border-box;
 }
+
+.btnLogin {
+  background-color: #4dccc6;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+.login{
+  font-size: 100px;
+  color : #1c8d87;
+  background-color: #96e4df;
+}
+
+.btnLogin:hover {
+  opacity: 0.8;
+}
+.form-page-add{
+  line-height: 100px;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
+}
+
+
+
+
+
+
+.chose-file{
+  margin: 20px;
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  background-color: #4dccc6;
+  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.chose-file:hover{
+  background-color: #89d8d3;
+background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+
+}
+.chose-file span{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.chose-file:before,
+.chose-file:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.chose-file:before {
+  height: 0%;
+  width: .1px;
+}
+.chose-file:after {
+  width: 0%;
+  height: .1px;
+}
+.chose-file:hover:before {
+  height: 100%;
+}
+.chose-file:hover:after {
+  width: 100%;
+}
+.chose-file span:before,
+.chose-file span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.chose-file span:before {
+  width: .1px;
+  height: 0%;
+}
+.chose-file span:after {
+  width: 0%;
+  height: .1px;
+}
+.chose-file span:hover:before {
+  height: 100%;
+}
+.chose-file span:hover:after {
+  width: 100%;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(247, 241, 241);
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #999;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+.student-item {
+  width: 400px;
+  height: 400px;
+  border: 5px solid #4dccc6;
+  display: inline-block;
+  flex-direction: column;
+  
+}
+.student-img{
+  width:60px;
+  height:80px;
+
+}
+.student-btn{
+  background-color: #b5eeea;
+}
+
+.student{
+  border: 10px solid #4dccc6;
+  margin : 50px;
+}
+.student-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.title-add{
+  font-size: 200px;
+  background-color: #b5eeea;
+  color:#03c8a8;
+  
+}
+
+
+input {
+  width: 400px;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+
+
+
+.btn-add{
+  margin: 20px;
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  background-color: #4dccc6;
+  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-add:hover{
+  background-color: #89d8d3;
+background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+
+}
+.btn-add span{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-add:before,
+.btn-add:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.btn-add:before {
+  height: 0%;
+  width: .1px;
+}
+.btn-add:after {
+  width: 0%;
+  height: .1px;
+}
+.btn-add:hover:before {
+  height: 100%;
+}
+.btn-add:hover:after {
+  width: 100%;
+}
+.btn-add span:before,
+.btn-add span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.btn-add span:before {
+  width: .1px;
+  height: 0%;
+}
+.btn-add span:after {
+  width: 0%;
+  height: .1px;
+}
+.btn-add span:hover:before {
+  height: 100%;
+}
+.btn-add span:hover:after {
+  width: 100%;
+}
+
+
+
+.student-btnEdit{
+  margin: 20px;
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  background-color: #4dccc6;
+  background-image: linear-gradient(315deg, #4ee75b 0%, #197c4e 74%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.student-btnEdit:hover{
+  background-color: #89d8d3;
+background-image: linear-gradient(315deg, #197c4e 0%, #4ee75b 74%);
+
+}
+.student-btnEdit span{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.student-btnEdit:before,
+.student-btnEdit:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.student-btnEdit:before {
+  height: 0%;
+  width: .1px;
+}
+.student-btnEdit:after {
+  width: 0%;
+  height: .1px;
+}
+.student-btnEdit:hover:before {
+  height: 100%;
+}
+.student-btnEdit:hover:after {
+  width: 100%;
+}
+.student-btnEdit span:before,
+.student-btnEdit span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.student-btnEdit span:before {
+  width: .1px;
+  height: 0%;
+}
+.student-btnEdit span:after {
+  width: 0%;
+  height: .1px;
+}
+.student-btnEdit span:hover:before {
+  height: 100%;
+}
+.student-btnEdit span:hover:after {
+  width: 100%;
+}
+
+
+
+
+
+
+.student-btnRemove{
+  margin: 20px;
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  background-color: #4dccc6;
+  background-image: linear-gradient(315deg, #e95151 0%, #f8c3cb 74%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.student-btnRemove:hover{
+  background-color: #89d8d3;
+background-image: linear-gradient(315deg, #f8c3cb 0%, #e95151 74%);
+
+}
+.student-btnRemove span{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.student-btnRemove:before,
+.student-btnRemove:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.student-btnRemove:before {
+  height: 0%;
+  width: .1px;
+}
+.student-btnRemove:after {
+  width: 0%;
+  height: .1px;
+}
+.student-btnRemove:hover:before {
+  height: 100%;
+}
+.student-btnRemove:hover:after {
+  width: 100%;
+}
+.student-btnRemove span:before,
+.student-btnRemove span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.student-btnRemove span:before {
+  width: .1px;
+  height: 0%;
+}
+.student-btnRemove span:after {
+  width: 0%;
+  height: .1px;
+}
+.student-btnRemove span:hover:before {
+  height: 100%;
+}
+.student-btnRemove span:hover:after {
+  width: 100%;
+}
+.add{
+  background-color: #b5eeea;
+}
+
+
+
+
+
+
+
+.student-btnDetails{
+  margin: 20px;
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  background-color: #4dccc6;
+  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.student-btnDetails:hover{
+  background-color: #89d8d3;
+background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+
+}
+.student-btnDetails span{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.student-btnDetails:before,
+.student-btnDetails:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.student-btnDetails:before {
+  height: 0%;
+  width: .1px;
+}
+.student-btnDetails:after {
+  width: 0%;
+  height: .1px;
+}
+.student-btnDetails:hover:before {
+  height: 100%;
+}
+.student-btnDetails:hover:after {
+  width: 100%;
+}
+.student-btnDetails span:before,
+.student-btnDetails span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.student-btnDetails span:before {
+  width: .1px;
+  height: 0%;
+}
+.student-btnDetails span:after {
+  width: 0%;
+  height: .1px;
+}
+.student-btnDetails span:hover:before {
+  height: 100%;
+}
+.student-btnDetails span:hover:after {
+  width: 100%;
+}
+
