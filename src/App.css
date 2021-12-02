@@ -31,9 +31,18 @@
   color: #61dafb;
 }
 
+.student{
+  border : 5px solid #61dafb;
+  vertical-align: middle;
+}
+label{
+  color: #07596d;
+  font-size: 30px;
+}
+
 /*Logins */
 
-.inputemail {
+input {
   width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -61,12 +70,12 @@
   opacity: 0.8;
 }
 .form-page-add{
-  line-height: 100px;
-  white-space: nowrap;
+ 
+  
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 400px;
+  height: 500px;
 }
 
 
@@ -209,10 +218,7 @@ li a:hover {
   background-color: #b5eeea;
 }
 
-.student{
-  border: 10px solid #4dccc6;
-  margin : 50px;
-}
+
 .student-container{
   display: flex;
   justify-content: space-between;
@@ -220,7 +226,7 @@ li a:hover {
 }
 
 .title-add{
-  font-size: 200px;
+  font-size: 150px;
   background-color: #b5eeea;
   color:#03c8a8;
   

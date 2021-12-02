@@ -28,6 +28,8 @@ function LoginForm() {
                 setMessage("Login failed");
             }
         }
+
+        
     }
     return (
         <div>
@@ -38,7 +40,7 @@ function LoginForm() {
                 <form onSubmit={submitHandler}>
                     <div className="form-group">
                         <label htmlFor="email">Email:<br /></label>
-                        <input className="inputemail" value={email} onChange={text => setEmail(text.target.value)} type="text" />
+                        <input className="inputemail" value={email} onChange={text => setEmail(text.target.value)}  type="text"  />
                     </div>
                     <div className="form-group">
                         <label htmlFor="password">Password:<br /></label>
